@@ -24,29 +24,29 @@ $(document).ready(function() {
 
     /* random background color from an array */
 
-    // let colors = ['blue', 'red', 'green', 'purple', 'yellow']
-    // $('body').click(function(){
-    //     var color = colors[Math.floor(Math.random() * colors.length)];
-    //     $(this).css('background', color);
-    // });
+    let colors = ['blue', 'red', 'green', 'purple', 'yellow']
+    $('body').click(function(){
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        $(this).css('background', color);
+    });
 
     /* add a character to a list */
 
-    // $('li').mouseover(function(){
-    //     $(this).append('👋');
-    // });
+    $('li').mouseover(function(){
+        $(this).append('👋');
+    });
 
     /* make a bug follow your cursor and resize */
 
-    // $('body').append('<div id="follow">🦟</div>');
-    // $(document).on("mousemove", function (event) {
-    //     $('#follow').css({
-    //         'font-size' : event.pageY/10+'px',
-    //         'position' : 'absolute',
-    //         'left' : event.pageX+10+'px',
-    //         'top' : event.pageY+10+'px'
-    //     });
-    // });
+    $('body').append('<div id="follow">🦟</div>');
+    $(document).on("mousemove", function (event) {
+        $('#follow').css({
+            'font-size' : event.pageY/10+'px',
+            'position' : 'absolute',
+            'left' : event.pageX+10+'px',
+            'top' : event.pageY+10+'px'
+        });
+    });
 
 
 });
